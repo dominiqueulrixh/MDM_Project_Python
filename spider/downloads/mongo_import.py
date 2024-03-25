@@ -1,6 +1,8 @@
 # new terminal
 # cd spider/downloads
 # python .\mongo_import.py -c tracks -i ../file.jl -u 'MONGO_DB_CONNECTION_STRING'
+# mongodb+srv://ulricdo1admin:Schule2000$@mdm-mongodb.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000
+# python .\mongo_import.py -c tracks -i ../file.jl -u 'mongodb+srv://ulricdo1admin:Schule2000$@mdm-mongodb.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000'
 
 import argparse
 import json

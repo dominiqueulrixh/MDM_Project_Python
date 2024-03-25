@@ -1,6 +1,6 @@
 # new terminal
 # cd model
-# python model.py -u 'MONGO_DB_CONNECTION_STRING'
+# python model.py -u 'mongodb+srv://ulricdo1admin:Schule2000$@mdm-mongodb.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000'
 
 import argparse
 
