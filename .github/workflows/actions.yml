@@ -27,7 +27,7 @@ jobs:
 
       - name: upload data to mongodb
         working-directory: spider/downloads
-        run: python /Users/dominiqueulrich/Studium/Semester 6/Model Deployment & Maintenance/SW4/HikePlanner/spider/downloads/mongo_import.py -c tracks -i ../file.jl -u "${{secrets.MONGODB_URI}}"
+        run: python /Users/dominiqueulrich/Studium/Semester\ 6/Model\ Deployment\ \&\ Maintenance/SW4/HikePlanner/spider/downloads/mongo_import.py -c tracks -i ../file.jl -u 'mongodb+srv://ulricdo1admin:Schule2000$@mdm-mongodb.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000'
 
       - name: build model
         working-directory: model
