@@ -9,6 +9,7 @@ import pandas as pd
 import seaborn as sn
 from pymongo import MongoClient
 
+
 parser = argparse.ArgumentParser(description='Create Model')
 parser.add_argument('-u', '--uri', required=True, help="mongodb uri with username/password")
 args = parser.parse_args()

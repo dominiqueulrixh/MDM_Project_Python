@@ -3,7 +3,8 @@
 # python .\mongo_import.py -c tracks -i ../file.jl -u 'MONGO_DB_CONNECTION_STRING'
 # mongodb+srv://ulricdo1admin:Schule2000$@mdm-mongodb.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000
 # python .\mongo_import.py -c tracks -i ../file.jl -u 'mongodb+srv://ulricdo1admin:Schule2000$@mdm-mongodb.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000'
-
+# /Users/dominiqueulrich/Studium/Semester\ 6/Model\ Deployment\ \&\ Maintenance/SW4/HikePlanner/spider/downloads/mongo_import.py -c tracks -i ../file.jl -u
+# /Users/dominiqueulrich/Studium/Semester 6/Model Deployment & Maintenance/SW4/HikePlanner/spider/file.jl
 import argparse
 import json
 import os
