@@ -2,13 +2,7 @@
     import { dev } from "$app/environment";
     let url = location.protocol + "//" + location.host;
     if (dev) {
-        url = "http://localhost:5000";
-    }
-
-    let count = 0;
-
-    function increment() {
-        count++;
+        url = "http://http://127.0.0.1:5000";
     }
 
     let downhill = 0;
@@ -45,10 +39,7 @@
     Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
 </p>
 
-<button on:click={increment}>
-    Clicked {count}
-    {count === 1 ? "time" : "times"}
-</button>
+
 
 <p>
     <strong>Abwärts [m]</strong>
