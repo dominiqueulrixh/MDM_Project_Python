@@ -92,6 +92,19 @@ def sac(uphill, distance):
     km = distance / 1000.0
     return 3600.0 * (uphill/400.0 + km /4.0)
 
+# Support Vector Regression (SVR)
+
+from sklearn.svm import SVR
+
+# Support Vector Regression
+svr = SVR(kernel='linear')
+svr.fit(x_train, y_train)
+y_pred_svr = svr.predict(x_test)
+r2 = r2_score(y_test, y_pred_svr)
+mse = mean_squared_error(y_test, y_pred_svr)
+
+print("SVR r2:\t{}\nSVR MSE: \t{}".format(r2, mse))
+
 print("*** DEMO ***")
 downhill = 300
 uphill = 700
