@@ -1,12 +1,13 @@
-# crawl gpx spider, limit to 10 and store output in json line format file
+# crawl gpx spider, limit to 10 and store output in json line format file (In my Project 20)
 # new terminal, cd spider
-# scrapy crawl gpx -s CLOSESPIDER_PAGECOUNT=10 -o file.jl
+# scrapy crawl gpx -s CLOSESPIDER_PAGECOUNT=20 -o file.jl
 
 import scrapy
 
 class GpxSpider(scrapy.Spider):
     name = 'gpx'
-    start_urls = ['http://www.hikr.org/filter.php?act=filter&a=ped&ai=100&aa=630']
+    #Datenherkunft URL (Filterung: Wandern Schwierigkeit T4)
+    start_urls = ['https://www.hikr.org/filter.php?act=filter&a=ped&ai=400&aa=400']
 
     def parse(self, response):
         for href in response.css('.content-list a::attr(href)'):
