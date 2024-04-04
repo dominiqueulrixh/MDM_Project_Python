@@ -1,6 +1,6 @@
 # Usage
-# docker build -t mosazhaw/hikeplanner .
-# docker run --name hikeplanner -e AZURE_STORAGE_CONNECTION_STRING='***' -p 9001:5000 -d mosazhaw/hikeplanner
+# docker build -t ulricdo1/hikeplanner .
+# docker run --name hikeplanner -e AZURE_STORAGE_CONNECTION_STRING='***' -p 9001:5000 -d ulricdo1/hikeplanner
 
 FROM python:3.12.1
 
