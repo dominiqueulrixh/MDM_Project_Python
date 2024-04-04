@@ -49,6 +49,8 @@ from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import Normalizer
 
+#Erstellen des Modells mit scikit-learn
+#Spalten wählen, Train/Test-Aufteilung
 y = df.reset_index()['moving_time']
 x = df.reset_index()[['downhill', 'uphill', 'length_3d', 'max_elevation']]
 

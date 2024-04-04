@@ -23,7 +23,7 @@ jobs:
           
       - name: scrape hikr data 
         working-directory: ./spider
-        run: scrapy crawl gpx -s CLOSESPIDER_PAGECOUNT=50 -o file.jl
+        run: scrapy crawl gpx -s CLOSESPIDER_PAGECOUNT=100 -o file.jl
 
       - name: upload data to mongodb
         working-directory: spider/downloads

@@ -1,6 +1,6 @@
 # crawl gpx spider, limit to 10 and store output in json line format file (In my Project 20)
 # new terminal, cd spider
-# scrapy crawl gpx -s CLOSESPIDER_PAGECOUNT=20 -o file.jl
+# scrapy crawl gpx -s CLOSESPIDER_PAGECOUNT=100 -o file.jl
 
 import scrapy
 
