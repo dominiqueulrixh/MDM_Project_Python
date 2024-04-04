@@ -65,7 +65,7 @@ r2 = r2_score(y_test, y_pred_lr)
 mse = mean_squared_error(y_test, y_pred_lr)
 
 # Mean Squared Error / R2
-print("r2:\t{}\nMSE: \t{}".format(r2, mse))
+print("LR r2:\t{}\nLR MSE: \t{}".format(r2, mse))
 
 # GradientBoostingRegressor
 from sklearn.ensemble import GradientBoostingRegressor
@@ -77,7 +77,7 @@ y_pred_gbr = gbr.predict(x_test)
 r2 = r2_score(y_test, y_pred_gbr)
 mse = mean_squared_error(y_test, y_pred_gbr)
 
-print("r2:\t{}\nMSE: \t{}".format(r2, mse))
+print("GBR r2:\t{}\nGBR MSE: \t{}".format(r2, mse))
 
 def din33466(uphill, downhill, distance):
     km = distance / 1000.0
