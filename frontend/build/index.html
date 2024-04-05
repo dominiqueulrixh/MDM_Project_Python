@@ -1,67 +1,39 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-	<meta charset="utf-8" />
-	<link rel="icon" href="./favicon.jpg" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-	<link rel="modulepreload" href="./_app/immutable/entry/start.CsAzObyp.js">
-	<link rel="modulepreload" href="./_app/immutable/chunks/entry.DpVxm0FG.js">
-	<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.BvLojk_z.js">
-	<link rel="modulepreload" href="./_app/immutable/entry/app.rUR2vthu.js">
-	<link rel="modulepreload" href="./_app/immutable/chunks/index.C2dLiiul.js">
-	<link rel="modulepreload" href="./_app/immutable/nodes/0.C6SE1IXJ.js">
-	<link rel="modulepreload" href="./_app/immutable/nodes/2.Cf1DCM01.js">
-
-	<link rel="stylesheet" href="style.css">
-
-	<title>HikePlanner</title>
-</head>
-
-<body data-sveltekit-preload-data="hover">
-	<div class="background"></div>
-	<div class="content">
-		<div style="display: contents">
-			<h1 data-svelte-h="svelte-e3ww2p">HikePlanner</h1>
-			<p data-svelte-h="svelte-1pram4v">Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the
-				documentation</p>
-			<p><strong data-svelte-h="svelte-4z8nqm">Abwärts [m]</strong> <label><input type="number" min="0"
-						max="10000" value="0"> <input type="range" min="0" max="10000" value="0"></label></p>
-			<p><strong data-svelte-h="svelte-12bkxll">Aufwärts [m]</strong> <label><input type="number" min="0"
-						max="10000" value="0"> <input type="range" min="0" max="10000" value="0"></label></p>
-			<p><strong data-svelte-h="svelte-gkflnq">Distanz [m]</strong> <label><input type="number" min="0"
-						max="30000" value="0"> <input type="range" min="0" max="30000" value="0"></label></p> <button
-				data-svelte-h="svelte-7qel70">Predict</button>
-			<p></p>
-			<table>
-				<tr>
-					<td data-svelte-h="svelte-1qjxbrr">Dauer:</td>
-					<td>n.a.</td>
-				</tr>
-				<tr>
-					<td data-svelte-h="svelte-cb1clj">DIN33466:</td>
-					<td>n.a.</td>
-				</tr>
-				<tr>
-					<td data-svelte-h="svelte-orpm3r">SAC:</td>
-					<td>n.a.</td>
-				</tr>
-			</table>
-
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.jpg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="./_app/immutable/assets/2.DPSI5HFL.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.06ykCs7F.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.C7ysFMfJ.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.BvLojk_z.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.DWKmVycZ.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.BhXtNPRn.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.BcCdsTSH.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.D3RVmSg3.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <title data-svelte-h="svelte-10wppex">HikePlanner</title> <div class="background svelte-1s70jj2"></div> <div class="content svelte-1s70jj2"><h1 class="svelte-1s70jj2" data-svelte-h="svelte-e3ww2p">HikePlanner</h1> <p data-svelte-h="svelte-1294upx">Erfasse alle Zahlen in Meter</p> <br> <p>Abwärts  
+        <label><input type="number" min="0" max="10000" class="svelte-1s70jj2" value="0"> <input type="range" min="0" max="10000" class="svelte-1s70jj2" value="0"></label></p> <p>Aufwärts
+        <label><input type="number" min="0" max="10000" class="svelte-1s70jj2" value="0"> <input type="range" min="0" max="10000" class="svelte-1s70jj2" value="0"></label></p> <p>Distanz  
+        <label><input type="number" min="0" max="30000" class="svelte-1s70jj2" value="0"> <input type="range" min="0" max="30000" class="svelte-1s70jj2" value="0"></label></p> <button class="berechnen svelte-1s70jj2">
+            Berechnen</button></div>  
+			
 			<script>
 				{
-					__sveltekit_1qj8hw3 = {
+					__sveltekit_19d7pj2 = {
 						base: new URL(".", location).pathname.slice(0, -1)
 					};
 
 					const element = document.currentScript.parentElement;
 
-					const data = [null, null];
+					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.CsAzObyp.js"),
-						import("./_app/immutable/entry/app.rUR2vthu.js")
+						import("./_app/immutable/entry/start.06ykCs7F.js"),
+						import("./_app/immutable/entry/app.DWKmVycZ.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 2],
@@ -73,7 +45,5 @@
 				}
 			</script>
 		</div>
-	</div>
-</body>
-
+	</body>
 </html>
