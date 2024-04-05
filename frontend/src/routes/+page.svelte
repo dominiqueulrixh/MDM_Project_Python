@@ -2,7 +2,7 @@
     import { dev } from "$app/environment";
     let url = location.protocol + "//" + location.host;
     if (dev) {
-        url = "http://http://127.0.0.1:5000";
+        url = "http://localhost:5000";
     }
 
     let downhill = 0;
