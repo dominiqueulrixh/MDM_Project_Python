@@ -16,4 +16,4 @@ RUN pip install -r requirements.txt
 # Docker Run Command
 EXPOSE 80
 ENV FLASK_APP=/usr/src/app/backend/service.py
-CMD [ "python", "-m" , "flask", "run", "--host=0.0.0.0", "--port=80"]
+CMD [ "python", "-m" , "flask", "run", "--host=0.0.0.0", "--port=80"]docker buildx build --platform linux/arm64 -t dominiqueulrixh/mdm-hikeplanner .
