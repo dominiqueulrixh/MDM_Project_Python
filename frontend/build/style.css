@@ -29,7 +29,7 @@ h1 {
     background-size: cover; /* Bild so skalieren, dass es den gesamten Bildschirm ausfüllt */
     background-position: center; /* Bild zentrieren */
     background-repeat: no-repeat; /* Bild nicht wiederholen */
-    opacity: 100; /* Transparenz für das Hintergrundbild einstellen */
+    opacity: 40; /* Transparenz für das Hintergrundbild einstellen */
 }
 
 .content {
